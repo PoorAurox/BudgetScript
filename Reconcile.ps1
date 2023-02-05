@@ -40,6 +40,7 @@ function Update-ExcelDates
                 }
                 Catch{
                     Write-Error "Close the the file $BudgetPath before continuing."
+                    Throw $_
                 }
             }
         }
