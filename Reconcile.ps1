@@ -47,7 +47,7 @@ function Update-ExcelDates
     }
 }
 
-$budgetPath = "C:\Users\gamers\Documents\Tyler\BudgetScript\One Year Spending Plan - 2023.xlsx"
+$budgetPath = 'C:\Users\gamers\Documents\Finances\Budget\One Year Spending Plan - 2023.xlsx'
 $month = Read-Host 'Enter worksheet name in Budget'
 $budgetXLSX = Import-Excel -Path $budgetPath -WorksheetName $month -StartRow 2 -StartColumn 2
 
